@@ -6292,10 +6292,11 @@ a {
   flex-wrap: wrap;
 }
 .content .works__list-item {
-  width: 25%;
-  height: 25vw;
+  width: calc(25% - 4em);
+  height: calc(25vw - 1em);
   background-size: cover;
   position: relative;
+  padding: 0.5em 2em;
 }
 .content .works__list-item > * {
   z-index: 100;
@@ -6333,11 +6334,26 @@ a {
 .content .works__list-item.eighth {
   background-image: url("../img/work8.png");
 }
-.content .works__list-item .work__title {
-  color: #ffffff;
+.content .works__list-item .work__container {
+  position: relative;
+  z-index: 2;
 }
-.content .works__list-item .work__description {
+.content .works__list-item .work__container .title {
   color: #ffffff;
+  font-size: 20px;
+}
+.content .works__list-item .work__container .description {
+  color: #ffffff;
+  font-size: 15px;
+}
+.content .works__all {
+  text-transform: uppercase;
+  color: #ea4235;
+  text-align: center;
+  padding: 2em 0;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
 }
 
 .footer {

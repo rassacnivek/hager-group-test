@@ -301,10 +301,11 @@ a {
       display: flex;
       flex-wrap: wrap;
       &-item {
-        width: 25%;
-        height: 25vw;
+        width: calc(25% - 4em);
+        height: calc(25vw - 1em);
         background-size: cover;
         position: relative;
+        padding: .5em 2em;
         & > * {
           z-index: 100;
         }
@@ -315,7 +316,10 @@ a {
           left: 0;
           width: 100%;
           height: 100%;
-          background: linear-gradient( rgba(0, 0, 0, 0.75) 10%, rgba(255, 255, 255, 0) 50%);
+          background: linear-gradient(
+            rgba(0, 0, 0, 0.75) 10%,
+            rgba(255, 255, 255, 0) 50%
+          );
         }
         &.first {
           background-image: url("../img/work1.png");
@@ -342,14 +346,29 @@ a {
           background-image: url("../img/work8.png");
         }
         .work {
-          &__title {
-            color: $secondary-color;
-          }
-          &__description {
-            color: $secondary-color;
+          &__container {
+            position: relative;
+            z-index: 2;
+            .title {
+              color: $secondary-color;
+              font-size: 20px;
+            }
+            .description {
+              color: $secondary-color;
+              font-size: 15px;
+            }
           }
         }
       }
+    }
+    &__all{
+      text-transform: uppercase;
+      color: $forth-color;
+      text-align: center;
+      padding: 2em 0;
+      display: flex;
+      justify-content: center;
+      font-weight: 700;
     }
   }
 }
