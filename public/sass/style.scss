@@ -73,7 +73,6 @@ $forth-color: #ea4235;
 
 * {
   font-family: "Roboto";
-  transition: all 0.3s ease-in-out;
   outline: none;
 }
 
@@ -307,7 +306,7 @@ a {
         height: calc(25vw - 1em);
         background-size: cover;
         position: relative;
-        padding: .5em 2em;
+        padding: 0.5em 2em;
         & > * {
           z-index: 100;
         }
@@ -349,6 +348,8 @@ a {
         }
         .work {
           &__container {
+            display: flex;
+            flex-direction: column;
             position: relative;
             z-index: 2;
             .title {
@@ -359,18 +360,46 @@ a {
               color: $secondary-color;
               font-size: 15px;
             }
+            .discover {
+              display: none;
+              opacity: 0;
+              color: $secondary-color;
+              border: 1px solid $third-bgcolor;
+              border-radius: 30px;
+              padding: 0.5em 1em;
+              width: 100px;
+              text-align: center;
+              align-self: center;
+              margin-top: 7em;
+            }
+          }
+        }
+        &:hover {
+          &::after {
+            transition: all 0.3s ease-in-out;
+            background: linear-gradient(
+              rgba(0, 0, 0, 0.95) 10%,
+              rgba(255, 255, 255, .2) 80%
+            );
+          }
+          .discover {
+            transition: all 0.3s ease-in-out;
+            display: block;
+            opacity: 1;
           }
         }
       }
     }
-    &__all{
-      text-transform: uppercase;
-      color: $forth-color;
-      text-align: center;
+    &__all {
       padding: 2em 0;
       display: flex;
       justify-content: center;
-      font-weight: 700;
+      &-button{
+        font-weight: 700;
+        text-align: center;
+        color: $forth-color;
+        text-transform: uppercase;
+      }
     }
   }
 }

@@ -6101,7 +6101,6 @@ readers do not read off random characters that represent icons */
 
 * {
   font-family: "Roboto";
-  transition: all 0.3s ease-in-out;
   outline: none;
 }
 
@@ -6337,6 +6336,8 @@ a {
   background-image: url("../img/work8.png");
 }
 .body-wrapper .works__list-item .work__container {
+  display: flex;
+  flex-direction: column;
   position: relative;
   z-index: 2;
 }
@@ -6348,14 +6349,37 @@ a {
   color: #ffffff;
   font-size: 15px;
 }
-.body-wrapper .works__all {
-  text-transform: uppercase;
-  color: #ea4235;
+.body-wrapper .works__list-item .work__container .discover {
+  display: none;
+  opacity: 0;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  padding: 0.5em 1em;
+  width: 100px;
   text-align: center;
+  align-self: center;
+  margin-top: 7em;
+}
+.body-wrapper .works__list-item:hover::after {
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(rgba(0, 0, 0, 0.95) 10%, rgba(255, 255, 255, 0.2) 80%);
+}
+.body-wrapper .works__list-item:hover .discover {
+  transition: all 0.3s ease-in-out;
+  display: block;
+  opacity: 1;
+}
+.body-wrapper .works__all {
   padding: 2em 0;
   display: flex;
   justify-content: center;
+}
+.body-wrapper .works__all-button {
   font-weight: 700;
+  text-align: center;
+  color: #ea4235;
+  text-transform: uppercase;
 }
 
 .footer {
