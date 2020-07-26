@@ -83,6 +83,10 @@ ul {
   margin: 0;
 }
 
+body {
+  position: relative;
+}
+
 a {
   text-decoration: none;
 }
@@ -364,6 +368,8 @@ a {
               display: none;
               opacity: 0;
               color: $secondary-color;
+              background-color: transparent;
+              cursor: pointer;
               border: 1px solid $third-bgcolor;
               border-radius: 30px;
               padding: 0.5em 1em;
@@ -379,7 +385,7 @@ a {
             transition: all 0.3s ease-in-out;
             background: linear-gradient(
               rgba(0, 0, 0, 0.95) 10%,
-              rgba(255, 255, 255, .2) 80%
+              rgba(255, 255, 255, 0.2) 80%
             );
           }
           .discover {
@@ -394,11 +400,58 @@ a {
       padding: 2em 0;
       display: flex;
       justify-content: center;
-      &-button{
+      &-button {
         font-weight: 700;
         text-align: center;
         color: $forth-color;
         text-transform: uppercase;
+      }
+    }
+  }
+
+  .overlay {
+    background-color: $box-shadow-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    .modal {
+      position: fixed;
+      width: 80vw;
+      height: 70vh;
+      background-color: $third-bgcolor;
+      // margin: 10vh 5vw;
+      display:flex;
+      flex-direction: column;
+      padding: 5vh 5vw;
+      &__title {
+      }
+      &__subtitle {
+        font-weight: 300;
+      }
+      &__content {
+      }
+      &-image {
+      }
+      &-description {
+        .description {
+          &__title {
+          }
+          &__text {
+            & > * {
+            }
+          }
+          &__buttons {
+            &-close {
+            }
+            &-discover {
+            }
+          }
+        }
       }
     }
   }
