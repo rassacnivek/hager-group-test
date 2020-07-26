@@ -167,7 +167,7 @@ a {
   }
 }
 
-.content {
+.body-wrapper {
   .hero {
     background-image: url("../img/hero-bg.png");
     background-size: cover;
@@ -213,9 +213,11 @@ a {
   }
 
   .about {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     &__image {
+      background-image: url("../img/description.png");
+      background-size: cover;
       width: 50vw;
     }
     &__text {
