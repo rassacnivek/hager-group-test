@@ -39,6 +39,9 @@
 .fal,
 .fad,
 .fab,
+.footer__contact-informations .informations__socials .socials__list .linkedin,
+.footer__contact-informations .informations__socials .socials__list .facebook,
+.footer__contact-informations .informations__socials .socials__list .twitter,
 .content .about__text-button .youtube,
 .header__right-socials .socials__list .linkedin,
 .header__right-socials .socials__list .facebook,
@@ -52,7 +55,7 @@
   line-height: 1;
 }
 
-.content .about__text-button .youtube, .header__right-socials .socials__list .linkedin, .header__right-socials .socials__list .facebook, .header__right-socials .socials__list .twitter {
+.footer__contact-informations .informations__socials .socials__list .linkedin, .footer__contact-informations .informations__socials .socials__list .facebook, .footer__contact-informations .informations__socials .socials__list .twitter, .content .about__text-button .youtube, .header__right-socials .socials__list .linkedin, .header__right-socials .socials__list .facebook, .header__right-socials .socials__list .twitter {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -157,6 +160,9 @@
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left,
+.footer__contact-informations .informations__socials .socials__list .fa-pull-left.linkedin,
+.footer__contact-informations .informations__socials .socials__list .fa-pull-left.facebook,
+.footer__contact-informations .informations__socials .socials__list .fa-pull-left.twitter,
 .content .about__text-button .fa-pull-left.youtube,
 .header__right-socials .socials__list .fa-pull-left.linkedin,
 .header__right-socials .socials__list .fa-pull-left.facebook,
@@ -168,6 +174,9 @@
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right,
+.footer__contact-informations .informations__socials .socials__list .fa-pull-right.linkedin,
+.footer__contact-informations .informations__socials .socials__list .fa-pull-right.facebook,
+.footer__contact-informations .informations__socials .socials__list .fa-pull-right.twitter,
 .content .about__text-button .fa-pull-right.youtube,
 .header__right-socials .socials__list .fa-pull-right.linkedin,
 .header__right-socials .socials__list .fa-pull-right.facebook,
@@ -6085,7 +6094,7 @@ readers do not read off random characters that represent icons */
   src: url("../fonts/FontAwesome/fa-brands-400.eot");
   src: url("../fonts/FontAwesome/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/FontAwesome/fa-brands-400.woff2") format("woff2"), url("../fonts/FontAwesome/fa-brands-400.woff") format("woff"), url("../fonts/FontAwesome/fa-brands-400.ttf") format("truetype"), url("../fonts/FontAwesome/fa-brands-400.svg#fontawesome") format("svg");
 }
-.fab, .content .about__text-button .youtube, .header__right-socials .socials__list .linkedin, .header__right-socials .socials__list .facebook, .header__right-socials .socials__list .twitter {
+.fab, .footer__contact-informations .informations__socials .socials__list .linkedin, .footer__contact-informations .informations__socials .socials__list .facebook, .footer__contact-informations .informations__socials .socials__list .twitter, .content .about__text-button .youtube, .header__right-socials .socials__list .linkedin, .header__right-socials .socials__list .facebook, .header__right-socials .socials__list .twitter {
   font-family: "Font Awesome 5 Brands";
   font-weight: 400;
 }
@@ -6127,7 +6136,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 1rem;
+  margin-left: 1em;
 }
 .header__left-nav .nav__list {
   display: flex;
@@ -6152,7 +6161,7 @@ a {
   margin-right: 1em;
   list-style: none;
 }
-.header__right-socials .socials__list .fab, .header__right-socials .socials__list .content .about__text-button .youtube, .content .about__text-button .header__right-socials .socials__list .youtube, .header__right-socials .socials__list .linkedin, .header__right-socials .socials__list .facebook, .header__right-socials .socials__list .twitter {
+.header__right-socials .socials__list .fab, .header__right-socials .footer__contact-informations .informations__socials .socials__list .linkedin, .footer__contact-informations .informations__socials .header__right-socials .socials__list .linkedin, .header__right-socials .footer__contact-informations .informations__socials .socials__list .facebook, .footer__contact-informations .informations__socials .header__right-socials .socials__list .facebook, .header__right-socials .footer__contact-informations .informations__socials .socials__list .twitter, .footer__contact-informations .informations__socials .header__right-socials .socials__list .twitter, .header__right-socials .socials__list .content .about__text-button .youtube, .content .about__text-button .header__right-socials .socials__list .youtube, .header__right-socials .socials__list .linkedin, .header__right-socials .socials__list .facebook, .header__right-socials .socials__list .twitter {
   padding: 0 0.5em;
   color: #353535;
 }
@@ -6242,12 +6251,178 @@ a {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-.content .about__text-button .fab, .content .about__text-button .youtube, .content .about__text-button .header__right-socials .socials__list .twitter, .header__right-socials .socials__list .content .about__text-button .twitter, .content .about__text-button .header__right-socials .socials__list .facebook, .header__right-socials .socials__list .content .about__text-button .facebook, .content .about__text-button .header__right-socials .socials__list .linkedin, .header__right-socials .socials__list .content .about__text-button .linkedin {
+.content .about__text-button .fab, .content .about__text-button .footer__contact-informations .informations__socials .socials__list .linkedin, .footer__contact-informations .informations__socials .socials__list .content .about__text-button .linkedin, .content .about__text-button .footer__contact-informations .informations__socials .socials__list .facebook, .footer__contact-informations .informations__socials .socials__list .content .about__text-button .facebook, .content .about__text-button .footer__contact-informations .informations__socials .socials__list .twitter, .footer__contact-informations .informations__socials .socials__list .content .about__text-button .twitter, .content .about__text-button .youtube, .content .about__text-button .header__right-socials .socials__list .twitter, .header__right-socials .socials__list .content .about__text-button .twitter, .content .about__text-button .header__right-socials .socials__list .facebook, .header__right-socials .socials__list .content .about__text-button .facebook, .content .about__text-button .header__right-socials .socials__list .linkedin, .header__right-socials .socials__list .content .about__text-button .linkedin {
   padding: 0 0.5em;
   color: #ea4235;
 }
 .content .about__text-button .youtube:before {
   content: "";
+}
+.content .services {
+  height: 60vh;
+}
+.content .services__title {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1.5em 0;
+}
+.content .services__content {
+  padding: 0 3vw;
+}
+.content .services__content .services__list {
+  display: flex;
+  list-style: none;
+}
+.content .services__content .services__list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2vw;
+}
+.content .services__content .services__list-item .item__image {
+  height: 70px;
+}
+.content .services__content .services__list-item .item__title {
+  text-transform: uppercase;
+}
+.content .services__content .services__list-item .item__description {
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  background-color: #353535;
+  letter-spacing: 1px;
+}
+.footer > * {
+  width: calc(100% - 26vh);
+  padding: 0 13vh;
+}
+.footer__title {
+  text-transform: uppercase;
+  text-align: center;
+}
+.footer__contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.footer__contact-informations .informations__countries .countries__list {
+  display: flex;
+  list-style: none;
+}
+.footer__contact-informations .informations__countries .countries__list-item {
+  cursor: pointer;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.5em;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.footer__contact-informations .informations__countries .countries__list-item:first-child {
+  margin-right: 1.5em;
+  padding-right: 1em;
+}
+.footer__contact-informations .informations__countries .countries__list-item.active {
+  border-bottom: 1px solid #ffffff;
+  cursor: default;
+}
+.footer__contact-informations .informations__contact_information {
+  font-weight: 100;
+}
+.footer__contact-informations .informations__contact_information-address {
+  margin-bottom: 0.5em;
+}
+.footer__contact-informations .informations__contact_information-address.uk-address {
+  display: none;
+}
+.footer__contact-informations .informations__contact_information-phone {
+  color: #ffffff;
+}
+.footer__contact-informations .informations__socials-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 300;
+}
+.footer__contact-informations .informations__socials .socials__list {
+  list-style: none;
+  color: #ffffff;
+  display: flex;
+}
+.footer__contact-informations .informations__socials .socials__list .fab, .footer__contact-informations .informations__socials .socials__list .linkedin, .footer__contact-informations .informations__socials .socials__list .facebook, .footer__contact-informations .informations__socials .socials__list .twitter, .footer__contact-informations .informations__socials .socials__list .content .about__text-button .youtube, .content .about__text-button .footer__contact-informations .informations__socials .socials__list .youtube {
+  margin-right: 0.5em;
+  color: #ffffff;
+}
+.footer__contact-informations .informations__socials .socials__list .twitter:before {
+  content: "";
+}
+.footer__contact-informations .informations__socials .socials__list .facebook:before {
+  content: "";
+}
+.footer__contact-informations .informations__socials .socials__list .linkedin:before {
+  content: "";
+}
+.footer__contact-form {
+  width: 60%;
+}
+.footer__contact-form .form__container .form__group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__contact-form .form__container .form__group > * {
+  background-color: #353535;
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #aaaaaa;
+  color: #ffffff;
+}
+.footer__contact-form .form__container .form__group-input {
+  margin-bottom: 1em;
+  height: 30px;
+}
+.footer__contact-form .form__container .form__group-textarea {
+  resize: none;
+}
+.footer__contact-form .form__container .form__group-input:focus, .footer__contact-form .form__container .form__group-textarea:focus {
+  border-bottom-color: #ffffff;
+  border-bottom-width: 2px;
+}
+.footer__contact-form .form__container .form__group .submit {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  width: 90px;
+  margin-top: 6vh;
+  padding: 8px 0px;
+  border-radius: 18px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+.footer__mentions {
+  background-color: #ea4235;
+  color: white;
+  font-size: 9px;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__mentions-information .information__list {
+  display: flex;
+  list-style: none;
+}
+.footer__mentions-information .information__list-item {
+  padding: 0.5em 1.5em;
+}
+.footer__mentions-information .information__list-item > * {
+  color: #ffffff;
+}
+.footer__mentions-information .information__list-item:last-child {
+  padding-right: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
