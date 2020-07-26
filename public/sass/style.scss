@@ -416,39 +416,68 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
+    display: flex;
+    justify-content: center;
     .modal {
       position: fixed;
-      width: 80vw;
-      height: 70vh;
+      width: 90vw;
+      height: 96vh;
       background-color: $third-bgcolor;
-      // margin: 10vh 5vw;
-      display:flex;
+      display: flex;
       flex-direction: column;
-      padding: 5vh 5vw;
+      margin-top: 2vh;
+      padding: 0 3vw;
       &__title {
       }
       &__subtitle {
         font-weight: 300;
+        margin-top: 0;
       }
       &__content {
-      }
-      &-image {
-      }
-      &-description {
-        .description {
-          &__title {
-          }
-          &__text {
-            & > * {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        &-image {
+          background-image: url("../img/work1.png");
+          background-size: cover;
+          width: 64%;
+          height: 94%;
+        }
+        &-description {
+          width: 32%;
+          .description {
+            &__title {
+              font-size: 24px;
+              font-weight: 300;
+              margin-top: 0;
+              margin-bottom: 0.6em;
             }
-          }
-          &__buttons {
-            &-close {
+            &__text {
+              & > * {
+                font-size: 14px;
+                margin-bottom: 1em;
+              }
             }
-            &-discover {
+            &__buttons {
+              & > * {
+                height: 39px;
+                width: 96px;
+                border: 1px solid $primary-bgcolor;
+                border-radius: 30px;
+                padding: 0.5em 1em;
+                text-align: center;
+                align-self: center;
+              }
+              &-close {
+                font-size:16px;
+                cursor: pointer;
+                color: $forth-color;
+                background-color: $third-bgcolor;
+              }
+              &-discover {
+                color: $third-bgcolor;
+                background-color: $primary-bgcolor;
+              }
             }
           }
         }
