@@ -7,6 +7,11 @@ $secondary-color: #ffffff;
 $third-color: #aaaaaa;
 $forth-color: #ea4235;
 
+$breakpoint-mini: "500px";
+$breakpoint-xs: "572px";
+$breakpoint-sm: "657px";
+$breakpoint-md: "768px";
+
 @mixin fontface(
   $name,
   $path,
@@ -97,19 +102,52 @@ a {
   &__left {
     display: flex;
     &-img {
-      display: flex;
-      align-items: center;
-      justify-content: center;
       width: 4em;
       height: 4em;
       background-color: $primary-bgcolor;
       color: $secondary-color;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        background-image: url("../img/brand.svg");
+        top: 25%;
+        left: 25%;
+        width: 50%;
+        height: 50%;
+      }
+      @media screen and (max-width: $breakpoint-sm) {
+        display: none;
+      }
+    }
+    &-hamburger {
+      display: none;
+      width: 4em;
+      height: 4em;
+      background-color: $primary-bgcolor;
+      color: $secondary-color;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        background-image: url("../img/menu.svg");
+        top: 25%;
+        left: 25%;
+        width: 50%;
+        height: 50%;
+      }
+      @media screen and (max-width: $breakpoint-sm) {
+        display: flex;
+      }
     }
     &-nav {
       display: flex;
       align-items: center;
       justify-content: center;
       margin-left: 1em;
+      @media screen and (max-width: $breakpoint-sm) {
+        display: none;
+      }
       .nav__list {
         display: flex;
         list-style: none;
@@ -172,14 +210,14 @@ a {
 
 .body-wrapper {
   .hero {
-    background-image: url("../img/hero-bg.png");
+    background-image: url(../img/hero-bg.png);
     background-size: cover;
-    height: calc(100vh - 4em - 9vw);
+    background-position: center center;
+    height: calc(80.4vh - 4em);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 4.5vw 9vw;
-
+    padding: 9.8vh 9vw;
     &__main {
       display: flex;
       flex-direction: column;
@@ -216,11 +254,11 @@ a {
   }
 
   .about {
-    min-height: 100vh;
     display: flex;
     &__image {
       background-image: url("../img/description.png");
       background-size: cover;
+      background-position: center center;
       width: 50vw;
     }
     &__text {
@@ -236,6 +274,9 @@ a {
       &-about {
         font-size: 1.35em;
         margin-bottom: 5vh;
+        @media screen and (max-width: $breakpoint-xs) {
+          font-size: 1.15em;
+        }
       }
       &-button {
         color: $forth-color;
@@ -249,6 +290,9 @@ a {
         cursor: pointer;
         letter-spacing: 1px;
         text-transform: uppercase;
+        @media screen and (max-width: $breakpoint-mini) {
+          width: 130px;
+        }
 
         .fab {
           padding: 0 0.5em;
@@ -263,27 +307,39 @@ a {
             content: fa-content($fa-var-youtube);
           }
         }
+        .text{
+          @media screen and (max-width: $breakpoint-mini) {
+            display: none;
+          }
+        }
       }
     }
   }
 
   .services {
-    height: 60vh;
+    margin: 2em 0;
     &__title {
       text-transform: uppercase;
       text-align: center;
-      margin: 1.5em 0;
+      margin: 0 0 1.5em 0;
     }
     .services__list {
       padding: 0 3vw;
       display: flex;
-      list-style: none;
+      flex-wrap: wrap;
+      justify-content: space-around;
       &-item {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 0 2vw;
+        width: calc(25% - 4vw);
+        @media screen and (max-width: $breakpoint-md) {
+          text-align: center;
+          width: calc(50% - 2em);
+          margin-bottom: 1em;
+        }
         .item {
           &__image {
             height: 70px;
@@ -311,6 +367,13 @@ a {
         background-size: cover;
         position: relative;
         padding: 0.5em 2em;
+        @media screen and (max-width: $breakpoint-md) {
+          width: calc(50% - 4em);
+        }
+        @media screen and (max-width: $breakpoint-mini) {
+          width: calc(100% - 4em);
+          height: 7em;
+        }
         & > * {
           z-index: 100;
         }
@@ -325,6 +388,12 @@ a {
             rgba(0, 0, 0, 0.75) 10%,
             rgba(255, 255, 255, 0) 50%
           );
+          @media screen and (max-width: $breakpoint-md) and (min-width: $breakpoint-mini) {
+            background: linear-gradient(
+              rgba(0, 0, 0, 0.95) 10%,
+              rgba(255, 255, 255, 0.2) 80%
+            );
+          }
         }
         &.first {
           background-image: url("../img/work1.png");
@@ -363,6 +432,9 @@ a {
             .description {
               color: $secondary-color;
               font-size: 15px;
+              @media screen and (max-width: $breakpoint-xs) {
+                display: none;
+              }
             }
             .discover {
               display: none;
@@ -377,19 +449,29 @@ a {
               text-align: center;
               align-self: center;
               margin-top: 7em;
+              @media screen and (max-width: $breakpoint-md) {
+                display: block;
+                opacity: 1;
+                margin-top: 3em;
+              }
+              @media screen and (max-width: $breakpoint-sm) {
+                margin-top: 1.5em;
+              }
+              @media screen and (max-width: $breakpoint-mini) {
+                display: none;
+              }
             }
           }
         }
-        &:hover {
+        &:hover,
+        &:focus {
           &::after {
-            transition: all 0.3s ease-in-out;
             background: linear-gradient(
               rgba(0, 0, 0, 0.95) 10%,
               rgba(255, 255, 255, 0.2) 80%
             );
           }
           .discover {
-            transition: all 0.3s ease-in-out;
             display: block;
             opacity: 1;
           }
@@ -494,8 +576,8 @@ a {
   letter-spacing: 1px;
 
   & > * {
-    width: calc(100% - 26vh);
-    padding: 0 13vh;
+    width: calc(100% - 14vw);
+    padding: 0 7vw;
   }
 
   &__title {
@@ -508,7 +590,16 @@ a {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
+    @media screen and (max-width: $breakpoint-mini) {
+      flex-direction: column;
+    }
     &-informations {
+      @media screen and (max-width: $breakpoint-mini) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2em;
+      }
       .informations {
         &__countries {
           .countries__list {
@@ -535,6 +626,9 @@ a {
 
         &__contact_information {
           font-weight: 100;
+          @media screen and (max-width: $breakpoint-mini) {
+            text-align: center;
+          }
           &-address {
             margin-bottom: 0.5em;
             &.uk-address {
@@ -629,6 +723,9 @@ a {
             font-weight: 700;
             font-size: 14px;
             cursor: pointer;
+            @media screen and (max-width: $breakpoint-md) {
+              margin-top: 3vh;
+            }
           }
         }
       }
@@ -642,6 +739,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
     &-copyright {
     }
     &-information {
@@ -658,6 +756,12 @@ a {
           }
         }
       }
+      @media screen and (max-width: $breakpoint-xs) {
+        display: none;
+      }
+    }
+    @media screen and (max-width: $breakpoint-xs) {
+      justify-content: center;
     }
   }
 }
