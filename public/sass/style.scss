@@ -140,6 +140,25 @@ a {
         display: flex;
       }
     }
+
+    &-cross {
+      display: none;
+      width: 4em;
+      height: 4em;
+      background-color: $primary-bgcolor;
+      color: $secondary-color;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        background-image: url("../img/cross.svg");
+        top: 25%;
+        left: 25%;
+        width: 50%;
+        height: 50%;
+      }
+    }
+
     &-nav {
       display: flex;
       align-items: center;
@@ -147,15 +166,32 @@ a {
       margin-left: 1em;
       @media screen and (max-width: $breakpoint-sm) {
         display: none;
+        position: fixed;
+        width: 100%;
+        top: 4em;
+        left: 0;
+        height: auto;
+        z-index: 3;
+        background-color: $third-bgcolor;
       }
       .nav__list {
         display: flex;
         list-style: none;
         color: $primary-color;
+        @media screen and (max-width: $breakpoint-sm) {
+          flex-direction: column;
+
+        }
         &-item {
           padding: 1em 1.5em;
           text-transform: uppercase;
           font-size: 14px;
+          &.xs {
+            display: none;
+            @media screen and (max-width: $breakpoint-xs) {
+              display: block;
+            }
+          }
           & > * {
             color: $secondary-bgcolor;
           }
@@ -307,7 +343,7 @@ a {
             content: fa-content($fa-var-youtube);
           }
         }
-        .text{
+        .text {
           @media screen and (max-width: $breakpoint-mini) {
             display: none;
           }

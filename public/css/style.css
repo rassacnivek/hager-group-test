@@ -6169,6 +6169,23 @@ a {
     display: flex;
   }
 }
+.header__left-cross {
+  display: none;
+  width: 4em;
+  height: 4em;
+  background-color: #ea4235;
+  color: #ffffff;
+  position: relative;
+}
+.header__left-cross::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/cross.svg");
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+}
 .header__left-nav {
   display: flex;
   align-items: center;
@@ -6178,6 +6195,13 @@ a {
 @media screen and (max-width: 657px) {
   .header__left-nav {
     display: none;
+    position: fixed;
+    width: 100%;
+    top: 4em;
+    left: 0;
+    height: auto;
+    z-index: 3;
+    background-color: #ffffff;
   }
 }
 .header__left-nav .nav__list {
@@ -6185,10 +6209,23 @@ a {
   list-style: none;
   color: #353535;
 }
+@media screen and (max-width: 657px) {
+  .header__left-nav .nav__list {
+    flex-direction: column;
+  }
+}
 .header__left-nav .nav__list-item {
   padding: 1em 1.5em;
   text-transform: uppercase;
   font-size: 14px;
+}
+.header__left-nav .nav__list-item.xs {
+  display: none;
+}
+@media screen and (max-width: 572px) {
+  .header__left-nav .nav__list-item.xs {
+    display: block;
+  }
 }
 .header__left-nav .nav__list-item > * {
   color: #353535;
