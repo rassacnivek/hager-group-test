@@ -6120,6 +6120,7 @@ a {
 }
 
 .header {
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -6267,6 +6268,24 @@ a {
   flex-direction: column;
   justify-content: center;
   padding: 9.8vh 9vw;
+}
+.body-wrapper .hero__second, .body-wrapper .hero__third, .body-wrapper .hero__forth {
+  background-size: cover;
+  background-position: center center;
+  height: 80.4vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 9.8vh 9vw;
+}
+.body-wrapper .hero__second {
+  background-image: url(../img/hero-bg2.png);
+}
+.body-wrapper .hero__third {
+  background-image: url(../img/hero-bg3.png);
+}
+.body-wrapper .hero__forth {
+  background-image: url(../img/hero-bg4.png);
 }
 .body-wrapper .hero__main {
   display: flex;

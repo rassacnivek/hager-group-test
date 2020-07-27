@@ -28,4 +28,6 @@ $(document).ready(function () {
         $('.header__left-cross').hide()
         $('.header__left-hamburger').css('display', 'flex')
     })
+
+    $('.slider').slick()
 })

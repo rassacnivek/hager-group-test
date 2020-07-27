@@ -97,6 +97,7 @@ a {
 }
 
 .header {
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -257,6 +258,29 @@ a {
     flex-direction: column;
     justify-content: center;
     padding: 9.8vh 9vw;
+    &__second,
+    &__third,
+    &__forth {
+      background-size: cover;
+      background-position: center center;
+      height: 80.4vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 9.8vh 9vw;
+    }
+
+    &__second {
+      background-image: url(../img/hero-bg2.png);
+    }
+
+    &__third {
+      background-image: url(../img/hero-bg3.png);
+    }
+    &__forth {
+      background-image: url(../img/hero-bg4.png);
+    }
+
     &__main {
       display: flex;
       flex-direction: column;
