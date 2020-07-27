@@ -6122,6 +6122,9 @@ a {
 .header {
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
 }
 .header__left {
   display: flex;
@@ -6202,6 +6205,7 @@ a {
     height: auto;
     z-index: 3;
     background-color: #ffffff;
+    margin-left: 0;
   }
 }
 .header__left-nav .nav__list {
@@ -6258,7 +6262,7 @@ a {
   background-image: url(../img/hero-bg.png);
   background-size: cover;
   background-position: center center;
-  height: calc(80.4vh - 4em);
+  height: 80.4vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6337,6 +6341,9 @@ a {
   cursor: pointer;
   letter-spacing: 1px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 500px) {
   .body-wrapper .about__text-button {
@@ -6350,9 +6357,16 @@ a {
 .body-wrapper .about__text-button .youtube:before {
   content: "";
 }
+.body-wrapper .about__text-button .text {
+  display: flex;
+}
+.body-wrapper .about__text-button .text .word {
+  margin-left: 5px;
+}
 @media screen and (max-width: 500px) {
-  .body-wrapper .about__text-button .text {
+  .body-wrapper .about__text-button .text .word {
     display: none;
+    margin: 0;
   }
 }
 .body-wrapper .services {

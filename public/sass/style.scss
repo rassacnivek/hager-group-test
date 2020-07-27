@@ -99,6 +99,9 @@ a {
 .header {
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
   &__left {
     display: flex;
     &-img {
@@ -173,6 +176,7 @@ a {
         height: auto;
         z-index: 3;
         background-color: $third-bgcolor;
+        margin-left: 0;
       }
       .nav__list {
         display: flex;
@@ -180,7 +184,6 @@ a {
         color: $primary-color;
         @media screen and (max-width: $breakpoint-sm) {
           flex-direction: column;
-
         }
         &-item {
           padding: 1em 1.5em;
@@ -249,7 +252,7 @@ a {
     background-image: url(../img/hero-bg.png);
     background-size: cover;
     background-position: center center;
-    height: calc(80.4vh - 4em);
+    height: 80.4vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -326,6 +329,9 @@ a {
         cursor: pointer;
         letter-spacing: 1px;
         text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         @media screen and (max-width: $breakpoint-mini) {
           width: 130px;
         }
@@ -344,8 +350,13 @@ a {
           }
         }
         .text {
-          @media screen and (max-width: $breakpoint-mini) {
-            display: none;
+          display: flex;
+          .word {
+            margin-left: 5px;
+            @media screen and (max-width: $breakpoint-mini) {
+              display: none;
+              margin: 0;
+            }
           }
         }
       }
