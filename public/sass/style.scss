@@ -283,6 +283,7 @@ a {
     flex-direction: column;
     justify-content: center;
     padding: 9.8vh 9vw;
+    margin-top: 4em;
     &__second,
     &__third,
     &__forth {
@@ -318,6 +319,9 @@ a {
       align-items: flex-start;
       width: 50%;
       text-align: left;
+      @media screen and (max-width: $breakpoint-xs) {
+        width: 70%;
+      }
       &-title {
         font-size: 50px;
         color: $secondary-color;

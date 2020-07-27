@@ -6293,6 +6293,7 @@ a {
   flex-direction: column;
   justify-content: center;
   padding: 9.8vh 9vw;
+  margin-top: 4em;
 }
 .body-wrapper .hero__second, .body-wrapper .hero__third, .body-wrapper .hero__forth {
   background-size: cover;
@@ -6324,6 +6325,11 @@ a {
   align-items: flex-start;
   width: 50%;
   text-align: left;
+}
+@media screen and (max-width: 572px) {
+  .body-wrapper .hero__main {
+    width: 70%;
+  }
 }
 .body-wrapper .hero__main-title {
   font-size: 50px;
