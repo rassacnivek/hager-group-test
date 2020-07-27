@@ -98,12 +98,18 @@ a {
 
 .header {
   z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: space-between;
   position: fixed;
   width: 100%;
   background-color: #ffffff;
   &__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     &-img {
       width: 4em;
@@ -141,6 +147,9 @@ a {
         height: 50%;
       }
       @media screen and (max-width: $breakpoint-sm) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
       }
     }
@@ -164,6 +173,9 @@ a {
     }
 
     &-nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -180,6 +192,9 @@ a {
         margin-left: 0;
       }
       .nav__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
         list-style: none;
         color: $primary-color;
@@ -205,8 +220,14 @@ a {
   }
   &__right {
     &-socials {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
       display: flex;
       .socials__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -254,6 +275,9 @@ a {
     background-size: cover;
     background-position: center center;
     height: 80.4vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -264,6 +288,9 @@ a {
       background-size: cover;
       background-position: center center;
       height: 80.4vh;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -282,6 +309,9 @@ a {
     }
 
     &__main {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -317,6 +347,9 @@ a {
   }
 
   .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     &__image {
       background-image: url("../img/description.png");
@@ -353,6 +386,9 @@ a {
         cursor: pointer;
         letter-spacing: 1px;
         text-transform: uppercase;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -374,6 +410,9 @@ a {
           }
         }
         .text {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
           display: flex;
           .word {
             margin-left: 5px;
@@ -396,10 +435,16 @@ a {
     }
     .services__list {
       padding: 0 3vw;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       &-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -430,6 +475,9 @@ a {
 
   .works {
     &__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
       display: flex;
       flex-wrap: wrap;
       &-item {
@@ -492,6 +540,9 @@ a {
         }
         .work {
           &__container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
             display: flex;
             flex-direction: column;
             position: relative;
@@ -551,6 +602,9 @@ a {
     }
     &__all {
       padding: 2em 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
       display: flex;
       justify-content: center;
       &-button {
@@ -577,6 +631,9 @@ a {
       width: 90vw;
       height: 96vh;
       background-color: $third-bgcolor;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
       display: flex;
       flex-direction: column;
       margin-top: 2vh;
@@ -588,6 +645,9 @@ a {
         margin-top: 0;
       }
       &__content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
         justify-content: space-between;
         height: 100%;
@@ -610,6 +670,9 @@ a {
             width: unset;
             margin-top: 2em;
             height: 51vh;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
             display: flex;
             flex-direction: column;
           }
@@ -662,6 +725,9 @@ a {
 }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   color: $secondary-color;
@@ -679,6 +745,9 @@ a {
   }
 
   &__contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -688,6 +757,9 @@ a {
     }
     &-informations {
       @media screen and (max-width: $breakpoint-mini) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -696,6 +768,9 @@ a {
       .informations {
         &__countries {
           .countries__list {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
             display: flex;
             list-style: none;
             &-item {
@@ -743,6 +818,9 @@ a {
           .socials__list {
             list-style: none;
             color: $secondary-color;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
             display: flex;
             .fab {
               margin-right: 0.5em;
@@ -783,6 +861,9 @@ a {
       width: 60%;
       .form__container {
         .form__group {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -829,6 +910,9 @@ a {
     color: white;
     font-size: 9px;
     font-weight: 100;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -837,6 +921,9 @@ a {
     }
     &-information {
       .information__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
         list-style: none;
         &-item {

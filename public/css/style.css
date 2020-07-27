@@ -6121,6 +6121,9 @@ a {
 
 .header {
   z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -6128,6 +6131,9 @@ a {
   background-color: #ffffff;
 }
 .header__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 .header__left-img {
@@ -6170,6 +6176,9 @@ a {
 }
 @media screen and (max-width: 657px) {
   .header__left-hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
   }
 }
@@ -6191,6 +6200,9 @@ a {
   height: 50%;
 }
 .header__left-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6210,6 +6222,9 @@ a {
   }
 }
 .header__left-nav .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   list-style: none;
   color: #353535;
@@ -6236,9 +6251,15 @@ a {
   color: #353535;
 }
 .header__right-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 .header__right-socials .socials__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6264,6 +6285,9 @@ a {
   background-size: cover;
   background-position: center center;
   height: 80.4vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6273,6 +6297,9 @@ a {
   background-size: cover;
   background-position: center center;
   height: 80.4vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6288,6 +6315,9 @@ a {
   background-image: url(../img/hero-bg4.png);
 }
 .body-wrapper .hero__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -6320,6 +6350,9 @@ a {
   padding: 6vh 9vw;
 }
 .body-wrapper .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 .body-wrapper .about__image {
@@ -6360,6 +6393,9 @@ a {
   cursor: pointer;
   letter-spacing: 1px;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6377,6 +6413,9 @@ a {
   content: "";
 }
 .body-wrapper .about__text-button .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 .body-wrapper .about__text-button .text .word {
@@ -6398,11 +6437,17 @@ a {
 }
 .body-wrapper .services .services__list {
   padding: 0 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 .body-wrapper .services .services__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6427,6 +6472,9 @@ a {
   text-align: center;
 }
 .body-wrapper .works__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
 }
@@ -6490,6 +6538,9 @@ a {
   background-image: url("../img/work8.png");
 }
 .body-wrapper .works__list-item .work__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -6548,6 +6599,9 @@ a {
 }
 .body-wrapper .works__all {
   padding: 2em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
 }
@@ -6573,6 +6627,9 @@ a {
   width: 90vw;
   height: 96vh;
   background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   margin-top: 2vh;
@@ -6583,6 +6640,9 @@ a {
   margin-top: 0;
 }
 .body-wrapper .overlay .modal__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: space-between;
   height: 100%;
@@ -6612,6 +6672,9 @@ a {
     width: unset;
     margin-top: 2em;
     height: 51vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
   }
@@ -6658,6 +6721,9 @@ a {
 }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   color: #ffffff;
@@ -6673,6 +6739,9 @@ a {
   text-align: center;
 }
 .footer__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -6685,6 +6754,9 @@ a {
 }
 @media screen and (max-width: 500px) {
   .footer__contact-informations {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6692,6 +6764,9 @@ a {
   }
 }
 .footer__contact-informations .informations__countries .countries__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   list-style: none;
 }
@@ -6735,6 +6810,9 @@ a {
 .footer__contact-informations .informations__socials .socials__list {
   list-style: none;
   color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 .footer__contact-informations .informations__socials .socials__list .fab, .footer__contact-informations .informations__socials .socials__list .linkedin, .footer__contact-informations .informations__socials .socials__list .facebook, .footer__contact-informations .informations__socials .socials__list .twitter, .footer__contact-informations .informations__socials .socials__list .body-wrapper .about__text-button .youtube, .body-wrapper .about__text-button .footer__contact-informations .informations__socials .socials__list .youtube {
@@ -6754,6 +6832,9 @@ a {
   width: 60%;
 }
 .footer__contact-form .form__container .form__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6797,12 +6878,18 @@ a {
   color: white;
   font-size: 9px;
   font-weight: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-align: center;
 }
 .footer__mentions-information .information__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   list-style: none;
 }
