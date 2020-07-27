@@ -6282,7 +6282,7 @@ a {
 }
 
 .body-wrapper .hero {
-  background-image: url(../img/hero-bg.png);
+  background-image: url(../img/hero-bg.jpg);
   background-size: cover;
   background-position: center center;
   height: 80.4vh;
@@ -6307,13 +6307,13 @@ a {
   padding: 9.8vh 9vw;
 }
 .body-wrapper .hero__second {
-  background-image: url(../img/hero-bg2.png);
+  background-image: url(../img/hero-bg2.jpg);
 }
 .body-wrapper .hero__third {
-  background-image: url(../img/hero-bg3.png);
+  background-image: url(../img/hero-bg3.jpg);
 }
 .body-wrapper .hero__forth {
-  background-image: url(../img/hero-bg4.png);
+  background-image: url(../img/hero-bg4.jpg);
 }
 .body-wrapper .hero__main {
   display: -webkit-box;
@@ -6357,7 +6357,7 @@ a {
   display: flex;
 }
 .body-wrapper .about__image {
-  background-image: url("../img/description.png");
+  background-image: url("../img/description.jpg");
   background-size: cover;
   background-position: center center;
   width: 50vw;
@@ -6515,28 +6515,28 @@ a {
   }
 }
 .body-wrapper .works__list-item.first {
-  background-image: url("../img/work1.png");
+  background-image: url("../img/work1.jpg");
 }
 .body-wrapper .works__list-item.second {
-  background-image: url("../img/work2.png");
+  background-image: url("../img/work2.jpg");
 }
 .body-wrapper .works__list-item.third {
-  background-image: url("../img/work3.png");
+  background-image: url("../img/work3.jpg");
 }
 .body-wrapper .works__list-item.forth {
-  background-image: url("../img/work4.png");
+  background-image: url("../img/work4.jpg");
 }
 .body-wrapper .works__list-item.fifth {
-  background-image: url("../img/work5.png");
+  background-image: url("../img/work5.jpg");
 }
 .body-wrapper .works__list-item.sixth {
-  background-image: url("../img/work6.png");
+  background-image: url("../img/work6.jpg");
 }
 .body-wrapper .works__list-item.seventh {
-  background-image: url("../img/work7.png");
+  background-image: url("../img/work7.jpg");
 }
 .body-wrapper .works__list-item.eighth {
-  background-image: url("../img/work8.png");
+  background-image: url("../img/work8.jpg");
 }
 .body-wrapper .works__list-item .work__container {
   display: -webkit-box;

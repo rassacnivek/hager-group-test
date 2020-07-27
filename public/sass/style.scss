@@ -272,7 +272,7 @@ a {
 
 .body-wrapper {
   .hero {
-    background-image: url(../img/hero-bg.png);
+    background-image: url(../img/hero-bg.jpg);
     background-size: cover;
     background-position: center center;
     height: 80.4vh;
@@ -299,14 +299,14 @@ a {
     }
 
     &__second {
-      background-image: url(../img/hero-bg2.png);
+      background-image: url(../img/hero-bg2.jpg);
     }
 
     &__third {
-      background-image: url(../img/hero-bg3.png);
+      background-image: url(../img/hero-bg3.jpg);
     }
     &__forth {
-      background-image: url(../img/hero-bg4.png);
+      background-image: url(../img/hero-bg4.jpg);
     }
 
     &__main {
@@ -353,7 +353,7 @@ a {
     display: -webkit-flex;
     display: flex;
     &__image {
-      background-image: url("../img/description.png");
+      background-image: url("../img/description.jpg");
       background-size: cover;
       background-position: center center;
       width: 50vw;
@@ -516,28 +516,28 @@ a {
           }
         }
         &.first {
-          background-image: url("../img/work1.png");
+          background-image: url("../img/work1.jpg");
         }
         &.second {
-          background-image: url("../img/work2.png");
+          background-image: url("../img/work2.jpg");
         }
         &.third {
-          background-image: url("../img/work3.png");
+          background-image: url("../img/work3.jpg");
         }
         &.forth {
-          background-image: url("../img/work4.png");
+          background-image: url("../img/work4.jpg");
         }
         &.fifth {
-          background-image: url("../img/work5.png");
+          background-image: url("../img/work5.jpg");
         }
         &.sixth {
-          background-image: url("../img/work6.png");
+          background-image: url("../img/work6.jpg");
         }
         &.seventh {
-          background-image: url("../img/work7.png");
+          background-image: url("../img/work7.jpg");
         }
         &.eighth {
-          background-image: url("../img/work8.png");
+          background-image: url("../img/work8.jpg");
         }
         .work {
           &__container {
